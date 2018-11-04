@@ -5,7 +5,7 @@ class GekkIO extends EventEmitter {
         super();
         if (typeof (props) == 'string') props = { script: props, debug: false };
         this.props = props;
-        this.debug = props.debug
+        this.debug = props.debug;
         this.process = spawn(props.script);
         this.isRunning = true;
         this.process.stdout.on('data', data => this._process(data.toString()));
