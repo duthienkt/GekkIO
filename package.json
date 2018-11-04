@@ -1,6 +1,6 @@
 {
   "name": "gekkio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Call child process and send message via stdio",
   "main": "master/index.js",
   "scripts": {
