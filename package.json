@@ -1,0 +1,28 @@
+{
+  "name": "gekkio",
+  "version": "0.1.0",
+  "description": "Call child process and send message via stdio",
+  "main": "master/index.js",
+  "scripts": {
+    "test": "g++ ./examples/sum.cpp -I ./slave/ -o sum  && node examples/sum.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duthienkt/GekkIO.git"
+  },
+  "keywords": [
+    "spawn",
+    "stdio",
+    "child-process",
+    "message"
+  ],
+  "author": "blueskythien2010@live.com",
+  "license": "SEE LICENSE IN LICESE",
+  "bugs": {
+    "url": "https://github.com/duthienkt/GekkIO/issues"
+  },
+  "homepage": "https://github.com/duthienkt/GekkIO#readme",
+  "dependencies": {
+    "events": "^3.0.0"
+  }
+}
