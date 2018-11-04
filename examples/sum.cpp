@@ -26,10 +26,6 @@ long long sum(int from, int to){
     return res;
 }
 
-/**
- *  test: [mess](Tmd1eWVuIFRoaSBUaHV5IEhhbmcA) 
- *
-*/
 void onMessCallback(void *data, int size)
 {
     Task *tsk = (Task *)data;
@@ -38,6 +34,12 @@ void onMessCallback(void *data, int size)
     rslt.sum = sum(tsk->from, tsk->to);
     gkio_send("result", &rslt, sizeof(Result));
 }
+/***
+ * Test in console :
+ * 
+ * [task](AgAAAAFlzR2AF7Qs)
+ * 
+ * */
 
 int main()
 {

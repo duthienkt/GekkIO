@@ -13,7 +13,7 @@ var Result = GKIOStruct()
     .declare();
 
 
-var SumWorkers = Array(4).fill(null).map(_ => new GekkIO('./sum'));
+var SumWorkers = Array(4).fill(null).map(_ => new GekkIO({script:'./sum', debug:true}));
 var ResultEmitor = new EventEmitter();
 
 SumWorkers.forEach(worker => {
